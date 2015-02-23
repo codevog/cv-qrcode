@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.name         = "CVQRCode"
   s.version      = "0.0.1"
-  s.summary      = "A short description of CVQRCode."
+  s.summary      = "CVQRCode is a viewController for scan QRCode"
 
   s.description  = <<-DESC
                    A longer description of CVQRCode in Markdown format.
@@ -78,7 +78,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/codevog/cv-qrcode", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/codevog/cv-qrcode.git", :tag => "0.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
