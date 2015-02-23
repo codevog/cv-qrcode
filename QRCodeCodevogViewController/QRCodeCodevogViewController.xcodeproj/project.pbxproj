@@ -1,0 +1,488 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60C2C8431A8E562D00DB6185 /* QRCodeCodevogViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 60C2C8421A8E562D00DB6185 /* QRCodeCodevogViewController.h */; };
+		60C2C8451A8E562D00DB6185 /* QRCodeCodevogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C2C8441A8E562D00DB6185 /* QRCodeCodevogViewController.m */; };
+		60C2C84B1A8E562D00DB6185 /* libQRCodeCodevogViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C2C83F1A8E562D00DB6185 /* libQRCodeCodevogViewController.a */; };
+		60C33E571A95E47C0014D404 /* libzbar.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C33E511A95E47C0014D404 /* libzbar.a */; };
+		60C33E581A95E47C0014D404 /* zbar-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C33E531A95E47C0014D404 /* zbar-back.png */; };
+		60C33E591A95E47C0014D404 /* zbar-help.html in Resources */ = {isa = PBXBuildFile; fileRef = 60C33E541A95E47C0014D404 /* zbar-help.html */; };
+		60C33E5A1A95E47C0014D404 /* zbar-helpicons.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C33E551A95E47C0014D404 /* zbar-helpicons.png */; };
+		60C33E5B1A95E47C0014D404 /* zbar-samples.png in Resources */ = {isa = PBXBuildFile; fileRef = 60C33E561A95E47C0014D404 /* zbar-samples.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60C2C84C1A8E562D00DB6185 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60C2C8371A8E562D00DB6185 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C2C83E1A8E562D00DB6185;
+			remoteInfo = QRCodeCodevogViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60C2C83D1A8E562D00DB6185 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				60C2C8431A8E562D00DB6185 /* QRCodeCodevogViewController.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		60C2C83F1A8E562D00DB6185 /* libQRCodeCodevogViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libQRCodeCodevogViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C2C8421A8E562D00DB6185 /* QRCodeCodevogViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeCodevogViewController.h; sourceTree = "<group>"; };
+		60C2C8441A8E562D00DB6185 /* QRCodeCodevogViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeCodevogViewController.m; sourceTree = "<group>"; };
+		60C2C84A1A8E562D00DB6185 /* QRCodeCodevogViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRCodeCodevogViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C2C8501A8E562D00DB6185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C33E3D1A95E47C0014D404 /* Decoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Decoder.h; sourceTree = "<group>"; };
+		60C33E3E1A95E47C0014D404 /* Exception.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exception.h; sourceTree = "<group>"; };
+		60C33E3F1A95E47C0014D404 /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		60C33E401A95E47C0014D404 /* ImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageScanner.h; sourceTree = "<group>"; };
+		60C33E411A95E47C0014D404 /* Processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Processor.h; sourceTree = "<group>"; };
+		60C33E421A95E47C0014D404 /* Scanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scanner.h; sourceTree = "<group>"; };
+		60C33E431A95E47C0014D404 /* Symbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symbol.h; sourceTree = "<group>"; };
+		60C33E441A95E47C0014D404 /* Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		60C33E451A95E47C0014D404 /* Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Window.h; sourceTree = "<group>"; };
+		60C33E461A95E47C0014D404 /* zbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zbar.h; sourceTree = "<group>"; };
+		60C33E471A95E47C0014D404 /* ZBarCameraSimulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCameraSimulator.h; sourceTree = "<group>"; };
+		60C33E481A95E47C0014D404 /* ZBarCaptureReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarCaptureReader.h; sourceTree = "<group>"; };
+		60C33E491A95E47C0014D404 /* ZBarHelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarHelpController.h; sourceTree = "<group>"; };
+		60C33E4A1A95E47C0014D404 /* ZBarImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImage.h; sourceTree = "<group>"; };
+		60C33E4B1A95E47C0014D404 /* ZBarImageScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarImageScanner.h; sourceTree = "<group>"; };
+		60C33E4C1A95E47C0014D404 /* ZBarReaderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderController.h; sourceTree = "<group>"; };
+		60C33E4D1A95E47C0014D404 /* ZBarReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderView.h; sourceTree = "<group>"; };
+		60C33E4E1A95E47C0014D404 /* ZBarReaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarReaderViewController.h; sourceTree = "<group>"; };
+		60C33E4F1A95E47C0014D404 /* ZBarSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSDK.h; sourceTree = "<group>"; };
+		60C33E501A95E47C0014D404 /* ZBarSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZBarSymbol.h; sourceTree = "<group>"; };
+		60C33E511A95E47C0014D404 /* libzbar.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libzbar.a; sourceTree = "<group>"; };
+		60C33E531A95E47C0014D404 /* zbar-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-back.png"; sourceTree = "<group>"; };
+		60C33E541A95E47C0014D404 /* zbar-help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "zbar-help.html"; sourceTree = "<group>"; };
+		60C33E551A95E47C0014D404 /* zbar-helpicons.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-helpicons.png"; sourceTree = "<group>"; };
+		60C33E561A95E47C0014D404 /* zbar-samples.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "zbar-samples.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60C2C83C1A8E562D00DB6185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C2C8471A8E562D00DB6185 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C33E571A95E47C0014D404 /* libzbar.a in Frameworks */,
+				60C2C84B1A8E562D00DB6185 /* libQRCodeCodevogViewController.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		60C2C8361A8E562D00DB6185 = {
+			isa = PBXGroup;
+			children = (
+				60C2C8411A8E562D00DB6185 /* QRCodeCodevogViewController */,
+				60C2C84E1A8E562D00DB6185 /* QRCodeCodevogViewControllerTests */,
+				60C2C8401A8E562D00DB6185 /* Products */,
+				60C33E391A95E47C0014D404 /* ZBarSDK */,
+			);
+			sourceTree = "<group>";
+		};
+		60C2C8401A8E562D00DB6185 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60C2C83F1A8E562D00DB6185 /* libQRCodeCodevogViewController.a */,
+				60C2C84A1A8E562D00DB6185 /* QRCodeCodevogViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60C2C8411A8E562D00DB6185 /* QRCodeCodevogViewController */ = {
+			isa = PBXGroup;
+			children = (
+				60C2C8421A8E562D00DB6185 /* QRCodeCodevogViewController.h */,
+				60C2C8441A8E562D00DB6185 /* QRCodeCodevogViewController.m */,
+			);
+			path = QRCodeCodevogViewController;
+			sourceTree = "<group>";
+		};
+		60C2C84E1A8E562D00DB6185 /* QRCodeCodevogViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				60C2C84F1A8E562D00DB6185 /* Supporting Files */,
+			);
+			path = QRCodeCodevogViewControllerTests;
+			sourceTree = "<group>";
+		};
+		60C2C84F1A8E562D00DB6185 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60C2C8501A8E562D00DB6185 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60C33E391A95E47C0014D404 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				60C33E3A1A95E47C0014D404 /* Headers */,
+				60C33E511A95E47C0014D404 /* libzbar.a */,
+				60C33E521A95E47C0014D404 /* Resources */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		60C33E3A1A95E47C0014D404 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				60C33E3B1A95E47C0014D404 /* ZBarSDK */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		60C33E3B1A95E47C0014D404 /* ZBarSDK */ = {
+			isa = PBXGroup;
+			children = (
+				60C33E3C1A95E47C0014D404 /* zbar */,
+				60C33E461A95E47C0014D404 /* zbar.h */,
+				60C33E471A95E47C0014D404 /* ZBarCameraSimulator.h */,
+				60C33E481A95E47C0014D404 /* ZBarCaptureReader.h */,
+				60C33E491A95E47C0014D404 /* ZBarHelpController.h */,
+				60C33E4A1A95E47C0014D404 /* ZBarImage.h */,
+				60C33E4B1A95E47C0014D404 /* ZBarImageScanner.h */,
+				60C33E4C1A95E47C0014D404 /* ZBarReaderController.h */,
+				60C33E4D1A95E47C0014D404 /* ZBarReaderView.h */,
+				60C33E4E1A95E47C0014D404 /* ZBarReaderViewController.h */,
+				60C33E4F1A95E47C0014D404 /* ZBarSDK.h */,
+				60C33E501A95E47C0014D404 /* ZBarSymbol.h */,
+			);
+			path = ZBarSDK;
+			sourceTree = "<group>";
+		};
+		60C33E3C1A95E47C0014D404 /* zbar */ = {
+			isa = PBXGroup;
+			children = (
+				60C33E3D1A95E47C0014D404 /* Decoder.h */,
+				60C33E3E1A95E47C0014D404 /* Exception.h */,
+				60C33E3F1A95E47C0014D404 /* Image.h */,
+				60C33E401A95E47C0014D404 /* ImageScanner.h */,
+				60C33E411A95E47C0014D404 /* Processor.h */,
+				60C33E421A95E47C0014D404 /* Scanner.h */,
+				60C33E431A95E47C0014D404 /* Symbol.h */,
+				60C33E441A95E47C0014D404 /* Video.h */,
+				60C33E451A95E47C0014D404 /* Window.h */,
+			);
+			path = zbar;
+			sourceTree = "<group>";
+		};
+		60C33E521A95E47C0014D404 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				60C33E531A95E47C0014D404 /* zbar-back.png */,
+				60C33E541A95E47C0014D404 /* zbar-help.html */,
+				60C33E551A95E47C0014D404 /* zbar-helpicons.png */,
+				60C33E561A95E47C0014D404 /* zbar-samples.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60C2C83E1A8E562D00DB6185 /* QRCodeCodevogViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C2C8531A8E562D00DB6185 /* Build configuration list for PBXNativeTarget "QRCodeCodevogViewController" */;
+			buildPhases = (
+				60C2C83B1A8E562D00DB6185 /* Sources */,
+				60C2C83C1A8E562D00DB6185 /* Frameworks */,
+				60C2C83D1A8E562D00DB6185 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QRCodeCodevogViewController;
+			productName = QRCodeCodevogViewController;
+			productReference = 60C2C83F1A8E562D00DB6185 /* libQRCodeCodevogViewController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		60C2C8491A8E562D00DB6185 /* QRCodeCodevogViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C2C8561A8E562D00DB6185 /* Build configuration list for PBXNativeTarget "QRCodeCodevogViewControllerTests" */;
+			buildPhases = (
+				60C2C8461A8E562D00DB6185 /* Sources */,
+				60C2C8471A8E562D00DB6185 /* Frameworks */,
+				60C2C8481A8E562D00DB6185 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60C2C84D1A8E562D00DB6185 /* PBXTargetDependency */,
+			);
+			name = QRCodeCodevogViewControllerTests;
+			productName = QRCodeCodevogViewControllerTests;
+			productReference = 60C2C84A1A8E562D00DB6185 /* QRCodeCodevogViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60C2C8371A8E562D00DB6185 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Codevog;
+				TargetAttributes = {
+					60C2C83E1A8E562D00DB6185 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					60C2C8491A8E562D00DB6185 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 60C2C83A1A8E562D00DB6185 /* Build configuration list for PBXProject "QRCodeCodevogViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60C2C8361A8E562D00DB6185;
+			productRefGroup = 60C2C8401A8E562D00DB6185 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60C2C83E1A8E562D00DB6185 /* QRCodeCodevogViewController */,
+				60C2C8491A8E562D00DB6185 /* QRCodeCodevogViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60C2C8481A8E562D00DB6185 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C33E591A95E47C0014D404 /* zbar-help.html in Resources */,
+				60C33E5B1A95E47C0014D404 /* zbar-samples.png in Resources */,
+				60C33E5A1A95E47C0014D404 /* zbar-helpicons.png in Resources */,
+				60C33E581A95E47C0014D404 /* zbar-back.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60C2C83B1A8E562D00DB6185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C2C8451A8E562D00DB6185 /* QRCodeCodevogViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C2C8461A8E562D00DB6185 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60C2C84D1A8E562D00DB6185 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60C2C83E1A8E562D00DB6185 /* QRCodeCodevogViewController */;
+			targetProxy = 60C2C84C1A8E562D00DB6185 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60C2C8511A8E562D00DB6185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos8.1;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Debug;
+		};
+		60C2C8521A8E562D00DB6185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos8.1;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7";
+			};
+			name = Release;
+		};
+		60C2C8541A8E562D00DB6185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60C2C8551A8E562D00DB6185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		60C2C8571A8E562D00DB6185 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QRCodeCodevogViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60C2C8581A8E562D00DB6185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = QRCodeCodevogViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZBarSDK",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60C2C83A1A8E562D00DB6185 /* Build configuration list for PBXProject "QRCodeCodevogViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C2C8511A8E562D00DB6185 /* Debug */,
+				60C2C8521A8E562D00DB6185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60C2C8531A8E562D00DB6185 /* Build configuration list for PBXNativeTarget "QRCodeCodevogViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C2C8541A8E562D00DB6185 /* Debug */,
+				60C2C8551A8E562D00DB6185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60C2C8561A8E562D00DB6185 /* Build configuration list for PBXNativeTarget "QRCodeCodevogViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C2C8571A8E562D00DB6185 /* Debug */,
+				60C2C8581A8E562D00DB6185 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60C2C8371A8E562D00DB6185 /* Project object */;
+}
