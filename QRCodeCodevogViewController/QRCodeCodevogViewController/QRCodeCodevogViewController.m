@@ -58,21 +58,17 @@
 }
 
 -(void)loadBeepSound{
-    // Get the path to the beep.mp3 file and convert it to a NSURL object.
     NSString *beepFilePath = [[NSBundle mainBundle] pathForResource:@"shutter" ofType:@"mp3"];
     NSURL *beepURL = [NSURL URLWithString:beepFilePath];
     
     NSError *error;
     
-    // Initialize the audio player object using the NSURL object previously set.
     _audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:beepURL error:&error];
     if (error) {
-        // If the audio player cannot be initialized then log a message.
         NSLog(@"Could not play beep file.");
         NSLog(@"%@", [error localizedDescription]);
     }
     else{
-        // If the audio player was successfully initialized then load it in memory.
         [_audioPlayer prepareToPlay];
     }
 }
