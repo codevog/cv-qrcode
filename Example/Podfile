@@ -1,1 +1,2 @@
-pod "CVQRCode", :git => 'https://github.com/codevog/cv-qrcode.git'
+platform :ios, '7.0'
+pod 'CVQRCode'

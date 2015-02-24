@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import <CVQRCode/QRCodeCodevogViewController.h>
+#import <QRCodeCodevogViewController.h>
 
 @interface ViewController ()
 
@@ -18,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+       [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(notification:) name:@"QRCodeReceived" object:nil];
+}
+
+- (void) notification: (NSNotification*) notification
+{
+    NSLog(@"%@", [notification object]);
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -27,9 +34,8 @@
 
 - (void) viewDidAppear:(BOOL)animated
 {
-    QRCodeCodevogViewController *code = [[QRCodeCodevogViewController alloc] init];//WithHeight:self.view.frame.size.height andWidth:self.view.frame.size.height];
-    //code.doneImage = [UIImage imageNamed:@"done"];
-    //code.logoImage = [UIImage imageNamed:@"Image"];
+    QRCodeCodevogViewController *code = [[QRCodeCodevogViewController alloc] init];
+    code.doneImage = [UIImage imageNamed:@"done"];
     [self presentViewController:code animated:YES completion:nil];
     //[self.navigationController pushViewController:code animated:YES];
 }

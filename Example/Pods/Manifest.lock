@@ -1,22 +1,13 @@
 PODS:
   - CVQRCode (0.0.1):
-    - ZBarSDK (~> 1.3)
+    - ZBarSDK
   - ZBarSDK (1.3.1)
 
 DEPENDENCIES:
-  - CVQRCode (from `https://github.com/codevog/cv-qrcode.git`)
-
-EXTERNAL SOURCES:
-  CVQRCode:
-    :git: https://github.com/codevog/cv-qrcode.git
-
-CHECKOUT OPTIONS:
-  CVQRCode:
-    :commit: 62887b7696eca4f9ece7ff969e84012ebf835c50
-    :git: https://github.com/codevog/cv-qrcode.git
+  - CVQRCode
 
 SPEC CHECKSUMS:
-  CVQRCode: c54f0a3274d5aa0d48a60d031a032cce0abac835
+  CVQRCode: 6d96ed8f86f4f1dadee56031dcfe0f1f361fe8c6
   ZBarSDK: 3ed560856963f765b66d834f464590bd6ba13b44
 
 COCOAPODS: 0.35.0
