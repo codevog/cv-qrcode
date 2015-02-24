@@ -1,0 +1,1 @@
+pod "CVQRCode", :git => 'https://github.com/codevog/cv-qrcode.git'
