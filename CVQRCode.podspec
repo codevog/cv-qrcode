@@ -34,10 +34,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "QRCodeCodevogViewController/QRCodeCodevogViewController/QRCodeCodevogViewController.{h,m}"
+  s.source_files  = "QRCodeCodevogViewController/QRCodeCodevogViewController/QRCodeCodevogViewController.{h,m}"
   # s.exclude_files = "Classes/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+  s.public_header_files = "QRCodeCodevogViewController/QRCodeCodevogViewController/QRCodeCodevogViewController.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -73,9 +73,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "ZBarSDK", "~> 1.3"
+  s.dependency 'ZBarSDK'
 
 end
