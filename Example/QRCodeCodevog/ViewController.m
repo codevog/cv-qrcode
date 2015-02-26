@@ -36,6 +36,7 @@
 {
     QRCodeCodevogViewController *code = [[QRCodeCodevogViewController alloc] init];
     code.doneImage = [UIImage imageNamed:@"done"];
+    code.logoImage = [UIImage imageNamed:@"Image"];
     [self presentViewController:code animated:YES completion:nil];
     //[self.navigationController pushViewController:code animated:YES];
 }
