@@ -392,6 +392,7 @@
 
 - (void) addLineAnimation
 {
+    if ([self.view viewWithTag:111]){[[self.view viewWithTag:111] removeFromSuperview];}
     int indent = 90;
     if ([[UIDevice currentDevice].model hasPrefix:@"iPad"])
     {
@@ -546,7 +547,7 @@
 - (void)getPhoto
 {
     if (_isReading) {_isReading = !_isReading;
-        [self stopReading];
+        [self stopReading]; [_lightButton setTitle:@"ON" forState:UIControlStateNormal];
     }
     UIImagePickerController * picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
@@ -556,7 +557,7 @@
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [picker dismissViewControllerAnimated:YES completion:nil];
-    [self scanForQR:[info objectForKey:@"UIImagePickerControllerOriginalImage"]];
+    _textField.text = [self scanForQR:[info objectForKey:@"UIImagePickerControllerOriginalImage"]];
 }
 
 - (NSString *)scanForQR:(UIImage *)image
@@ -574,7 +575,6 @@
     if (!sym) {
         return nil;
     }
-    _textField.text = sym.data;
     return sym.data;
 }
 
