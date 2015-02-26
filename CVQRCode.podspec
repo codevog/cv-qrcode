@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "CVQRCode"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "CVQRCode is a viewController for scan QRCode"
 
   s.description  = <<-DESC
