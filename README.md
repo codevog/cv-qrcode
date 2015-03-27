@@ -1,6 +1,6 @@
 # CV QRCode
 
-CVQRCode is a viewController for scan QRCode
+Wraps up QR scanning/recognition functionality into a simple control
 
 ![Screenshot1](http://i.imgur.com/4FwS55cl.png "Screenshot1") 
 ![Screenshot2](http://i.imgur.com/n6sefsJl.png "Screenshot2")
